@@ -22,6 +22,7 @@ import MuiTableCell from "@mui/material/TableCell";
 interface Props {
   currentStep: number,
   step: number,
+  data:IKriterien[]
 }
 
 const radios=[1,2,3,4,5]
@@ -69,14 +70,13 @@ function Content(colIndex: number, row: IKriterien) {
   </TableCell>
 }
 
-export const DummyFormDataInputDisplay: FC<Props> = ({currentStep,step}) => {
+export const DummyFormDataInputDisplay: FC<Props> = ({currentStep,step,data}) => {
   const [expanded, setExpanded] = useState<number | false>(0)
 
   const handleChange = (panel: number) => (_: React.SyntheticEvent, newExpanded: boolean) => {
     setExpanded(newExpanded ? panel : false);
   };
 
-  const data=FachkompetenzKriterien
   return <>
     <div hidden={step !== currentStep}>
       <TableContainer component={Paper}>
