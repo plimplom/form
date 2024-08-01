@@ -1,5 +1,5 @@
 
-![img](https://github.com/plimplom/form/blob/master/img.jpg?raw=true)
+![img](https://github.com/plimplom/form/blob/master/img.png?raw=true)
 
 # React + TypeScript + Vite
 
